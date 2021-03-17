@@ -1,18 +1,31 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React, { createContext, useEffect, useState } from "react";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 import GlobalStyles from "./GlobalStyles";
+import Header from "./Header";
+import Users from "./Users";
+import User from "./User";
+import SignIn from "./SignIn";
 
 const App = () => {
   return (
     <BrowserRouter>
       <GlobalStyles />
       <div>
+        <Header />
         <Switch>
-          <Route exact path="/">
-            Homepage
+          <Route exact path="/homepage">
+            <Users />
           </Route>
-          <Route path="/page-1">Page 1</Route>
+          <Route exact path="/">
+            <Users />
+          </Route>
+          <Route path="/users/:id">
+            <User />
+          </Route>
+          <Route path="/signin">
+            <SignIn />
+          </Route>
         </Switch>
       </div>
     </BrowserRouter>

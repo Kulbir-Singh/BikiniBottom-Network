@@ -19,6 +19,14 @@ export default createGlobalStyle`
         max-width: 100vw;
     }
 
+    :root {
+  --primary-color: #cc5500;
+  --accent-bg-color: rgba(204, 85, 0, 0.1);
+  --page-horizontal-padding: 20px;
+  --header-height: 50px;
+  --max-content-width: 1200px;
+  --heading-font-family: "Teko", sans-serif;
+}
     /* http://meyerweb.com/eric/tools/css/reset/
         v2.0 | 20110126
         License: none (public domain)
