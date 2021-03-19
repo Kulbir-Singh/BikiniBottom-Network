@@ -26,20 +26,20 @@ const Header = () => {
       <Div>
         <H1>
           <Link to="/homepage" style={{ textDecoration: "none" }}>
-            <H1>Facespace</H1>
+            <H1>Bikini Bottom</H1>
           </Link>
         </H1>
         <H1>
           <H1>{currentUser && currentUser.name}</H1>
           {currentUser ? (
             <Link to="/homepage" style={{ textDecoration: "none" }}>
-              <button
+              <Button
                 onClick={() => {
                   setCurrentUser(undefined);
                 }}
               >
                 Sign Out
-              </button>
+              </Button>
             </Link>
           ) : (
             <Link to="/signin" style={{ textDecoration: "none" }}>
@@ -51,6 +51,20 @@ const Header = () => {
     </>
   );
 };
+
+const Button = styled.button`
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  padding: 5px 25px 0px 0;
+  background-color: rgba(0, 43, 77, 0.1);
+  text-decoration: underline;
+  :hover {
+    color: #e7ed26;
+  }
+`;
 
 const Div = styled.div`
   display: flex;

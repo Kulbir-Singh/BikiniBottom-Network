@@ -18,7 +18,7 @@ const SignIn = () => {
     let user =
       allUsers &&
       allUsers.find((user) => {
-        return user.name === userName;
+        return user.name.toUpperCase() === userName.toUpperCase();
       });
 
     if (user) {

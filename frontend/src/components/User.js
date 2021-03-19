@@ -17,10 +17,10 @@ const User = () => {
   return user && user.friends ? (
     <>
       <Div>
-        <div>
+        <UserFocus>
           <Img src={user.avatarUrl} />
-          <H1>{user.name}</H1>
-        </div>
+          <H1>{user.name}'s friends</H1>
+        </UserFocus>
         <Friends />
       </Div>
     </>
@@ -29,19 +29,39 @@ const User = () => {
   );
 };
 
+const UserFocus = styled.div`
+  margin-bottom: 200px;
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+  /* background-color: #002b4d; */
+  background: linear-gradient(90deg, #002b4d, #55e7fc);
+  text-decoration: none;
+  :hover {
+    background: linear-gradient(90deg, #55e7fc, #002b4d);
+  }
+`;
+
 const Div = styled.div`
   display: flex;
-  flex-direction: column;
+  background: url("../spongebobwall.jpg");
   width: 100%;
-  height: 1000px;
+  height: 94.7vh;
   padding-left: 10%;
   padding-top: 10%;
 `;
 
 const H1 = styled.h1`
-  display: flex;
-  align-items: center;
-  height: 300px;
+  position: relative;
+  width: 500px;
+  border-bottom: 2px solid #002b4d;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #000);
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  top: -200px;
+  right: -350px;
 `;
 
 const Img = styled.img`

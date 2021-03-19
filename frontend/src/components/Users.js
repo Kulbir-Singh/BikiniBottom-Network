@@ -8,30 +8,43 @@ const Users = () => {
   const { allUsers, currentUser } = useContext(UserContext);
 
   if (allUsers && currentUser) {
+    let newAllUsers = allUsers.filter((user) => {
+      return user.name !== currentUser.name;
+    });
     return (
       <>
-        <AllUsers>
-          <H1>All Facespace members</H1>
-          {allUsers.map((user) => (
-            <UserInfo>
-              <Link to={`/users/${user._id}`}>
-                <Img src={user.avatarUrl} />
-                <UserName>{user.name}</UserName>
-                {currentUser.friends.includes(user._id) && <span>friend</span>}
-              </Link>
-            </UserInfo>
-          ))}
-        </AllUsers>
+        <Div>
+          <AllUsers>
+            <H1>All Bikini Bottom residents</H1>
+            {newAllUsers.map((user) => (
+              <UserInfo>
+                <Link
+                  to={`/users/${user._id}`}
+                  style={{ textDecoration: "none" }}
+                >
+                  <Img src={user.avatarUrl} />
+                  <UserName>{user.name}</UserName>
+                  {currentUser.friends.includes(user._id) && (
+                    <YourFriend>friend</YourFriend>
+                  )}
+                </Link>
+              </UserInfo>
+            ))}
+          </AllUsers>
+        </Div>
       </>
     );
   } else if (allUsers) {
     return (
       <Div>
         <AllUsers>
-          <H1>All Facespace members</H1>
+          <H1>All Bikini Bottom residents</H1>
           {allUsers.map((user) => (
             <UserInfo>
-              <Link to={`/users/${user._id}`}>
+              <Link
+                to={`/users/${user._id}`}
+                style={{ textDecoration: "none" }}
+              >
                 <Img src={user.avatarUrl} />
                 <UserName>{user.name}</UserName>
               </Link>
@@ -44,6 +57,17 @@ const Users = () => {
     return <p>laoding</p>;
   }
 };
+
+const YourFriend = styled.p`
+  color: Yellow;
+  text-align: center;
+  position: relative;
+  top: -200px;
+  font-size: 30px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #000);
+`;
+
 const Div = styled.div`
   background-image: url("../water.jpg");
   background-size: cover;
@@ -62,30 +86,49 @@ const AllUsers = styled.div`
 
 const UserInfo = styled.div`
   margin: 40px;
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  /* background-color: #002b4d; */
+  background: linear-gradient(90deg, #002b4d, #55e7fc);
+  text-decoration: none;
+  :hover {
+    background: linear-gradient(90deg, #55e7fc, #002b4d);
+  }
 `;
 
 const Img = styled.img`
   width: 150px;
   height: 150px;
-  border-radius: 10px;
-  background-color: #3d9feb;
-  border: 2px solid #3d9feb;
-  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 1.5);
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 1.5);
+  position: relative;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #000);
+  transition: 1000ms;
+  :hover {
+    height: 200px;
+    width: 200px;
+  }
 `;
 
 const UserName = styled.p`
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: #3d9feb;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #000);
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
   text-align: center;
+  position: relative;
+  top: -50px;
 `;
 
 const H1 = styled.h1`
-  color: #3d9feb;
+  text-align: center;
+  color: linear-gradient(90deg, #002b4d, #55e7fc);
+  height: 50px;
+  font-size: 40px;
+  color: #002b4d;
   width: 100%;
   margin-top: 0px;
-  font-size: 25px;
 `;
 
 export default Users;
