@@ -25,21 +25,27 @@ const Header = () => {
     <>
       <Div>
         <H1>
-          <Link to="/homepage">
+          <Link to="/homepage" style={{ textDecoration: "none" }}>
             <H1>Facespace</H1>
           </Link>
         </H1>
-        <H1>{name}</H1>
         <H1>
-          <Link to="/signin">
-            {currentUser ? (
-              <H1>Sign Out</H1>
-            ) : (
-              <>
-                <H1>Sign in</H1>
-              </>
-            )}
-          </Link>
+          <H1>{currentUser && currentUser.name}</H1>
+          {currentUser ? (
+            <Link to="/homepage" style={{ textDecoration: "none" }}>
+              <button
+                onClick={() => {
+                  setCurrentUser(undefined);
+                }}
+              >
+                Sign Out
+              </button>
+            </Link>
+          ) : (
+            <Link to="/signin" style={{ textDecoration: "none" }}>
+              <H1>Sign in</H1>
+            </Link>
+          )}
         </H1>
       </Div>
     </>
@@ -50,15 +56,9 @@ const Div = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: #3d9feb;
+  /* background-color: #3d9feb; */
+  background-color: rgba(0, 43, 77, 0.9);
 `;
-
-// const Links = styled.Link`
-//   text-decoration: none;
-//   :visited {
-//     color: white;
-//   }
-// `;
 
 const H1 = styled.h1`
   color: white;
@@ -67,6 +67,9 @@ const H1 = styled.h1`
   align-items: center;
   padding: 10px;
   font-size: 25px;
+  :hover {
+    color: #e7ed26;
+  }
 `;
 
 export default Header;

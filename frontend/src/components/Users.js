@@ -5,22 +5,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { UserContext } from "./UserContext";
 
 const Users = () => {
-  const { allUsers, user, userName, currentUser } = useContext(UserContext);
-  console.log(currentUser);
-  // let friends =
-  //   //if currentUser exists, if so, then filter
-  //   //currentUser === {id: '...', name:'Lis', friends:['123', '111']}
-  //   currentUser &&
-  //   allUsers.filter((user) => {
-  //     //each user in allUsers (russel, maisy, ...)
-  //     currentUser.friends.includes(user._id)
-  //     //we want to check if their id is included in Lis's friends array
-  //     return;
-  //   });
-  // return user.friends.includes());
+  const { allUsers, currentUser } = useContext(UserContext);
 
-  //  if (allUsers && currentUser) {
-  //  console.log(user);
   if (allUsers && currentUser) {
     return (
       <>
@@ -31,9 +17,6 @@ const Users = () => {
               <Link to={`/users/${user._id}`}>
                 <Img src={user.avatarUrl} />
                 <UserName>{user.name}</UserName>
-                {/* if the first part is true then the second part is true (its justs a span...so it's always true)
-                  if first part is false then it 
-              */}
                 {currentUser.friends.includes(user._id) && <span>friend</span>}
               </Link>
             </UserInfo>
@@ -43,7 +26,7 @@ const Users = () => {
     );
   } else if (allUsers) {
     return (
-      <>
+      <Div>
         <AllUsers>
           <H1>All Facespace members</H1>
           {allUsers.map((user) => (
@@ -55,53 +38,53 @@ const Users = () => {
             </UserInfo>
           ))}
         </AllUsers>
-      </>
+      </Div>
     );
   } else {
     return <p>laoding</p>;
   }
 };
+const Div = styled.div`
+  background-image: url("../water.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 94.7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 const AllUsers = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 10%;
-  margin-top: 50px;
-  width: 80%;
-  height: 100%;
 `;
 
 const UserInfo = styled.div`
-  width: 100px;
-  height: 100px;
   margin: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 const Img = styled.img`
-  width: 100px;
-  border-radius: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #3d9feb;
   border: 2px solid #3d9feb;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 1.5);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 1.5);
 `;
 
-const UserName = styled.div`
-  width: 100px;
+const UserName = styled.p`
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background-color: #3d9feb;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 `;
 
 const H1 = styled.h1`
   color: #3d9feb;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 10px;
+  margin-top: 0px;
   font-size: 25px;
 `;
 

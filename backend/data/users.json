@@ -1,146 +1,146 @@
 [
   {
     "_id": "1006",
-    "name": "Russell",
+    "name": "Barnacle Boy",
     "friends": ["1007", "1008", "1009"],
-    "avatarUrl": "/images/profile-pics/000001.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/barnacleboy.png"
   },
   {
     "_id": "1007",
-    "name": "Maisy",
+    "name": "Cavemanbob",
     "friends": ["1006", "1008", "1009"],
-    "avatarUrl": "/images/profile-pics/000002.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/cavemanbob.png"
   },
   {
     "_id": "1008",
-    "name": "Fletcher",
+    "name": "Doodlebob",
     "friends": ["1006", "1007", "1009"],
-    "avatarUrl": "/images/profile-pics/000003.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/doodlebob.png"
   },
   {
     "_id": "1009",
-    "name": "Charley",
+    "name": "Evilguy",
     "friends": ["1006", "1008", "1007"],
-    "avatarUrl": "/images/profile-pics/000004.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/evilguy.png"
   },
   {
     "_id": "1013",
-    "name": "Lana",
+    "name": "Fredd",
     "friends": ["1014", "1018", "1023"],
-    "avatarUrl": "/images/profile-pics/000005.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/fredd.png"
   },
   {
     "_id": "1014",
-    "name": "Leona",
+    "name": "Fred",
     "friends": ["1013", "1015", "1016", "1017"],
-    "avatarUrl": "/images/profile-pics/000006.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/Fred.png"
   },
   {
     "_id": "1015",
-    "name": "Patricia",
+    "name": "Gary",
     "friends": ["1014", "1016", "1017"],
-    "avatarUrl": "/images/profile-pics/000007.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/gary.png"
   },
   {
     "_id": "1016",
-    "name": "Oliver",
+    "name": "Jellyfish",
     "friends": ["1014", "1015", "1017"],
-    "avatarUrl": "/images/profile-pics/000008.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/jellyfish.png"
   },
   {
     "_id": "1017",
-    "name": "Harry",
+    "name": "Karen",
     "friends": ["1014", "1015", "1016"],
-    "avatarUrl": "/images/profile-pics/000009.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/karen.png"
   },
   {
     "_id": "1018",
-    "name": "Paolo",
+    "name": "Kingneptune",
     "friends": ["1013", "1019", "1020", "1021"],
-    "avatarUrl": "/images/profile-pics/000014.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/kingneptune.png"
   },
   {
     "_id": "1019",
-    "name": "Jim",
+    "name": "Mermaidman",
     "friends": ["1018", "1020", "1021"],
-    "avatarUrl": "/images/profile-pics/000016.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/mermaidman.png"
   },
   {
     "_id": "1020",
-    "name": "Angelo",
+    "name": "Misskrabs",
     "friends": ["1019", "1018", "1021"],
-    "avatarUrl": "/images/profile-pics/000017.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/misskrabs.png"
   },
   {
     "_id": "1021",
-    "name": "Lise",
+    "name": "Mr Krabs",
     "friends": ["1019", "1020", "1018"],
-    "avatarUrl": "/images/profile-pics/000018.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/mrkrabs.png"
   },
   {
     "_id": "1022",
-    "name": "Matilda",
+    "name": "Mrs.puff",
     "friends": ["1023", "1024", "1025"],
-    "avatarUrl": "/images/profile-pics/000019.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/mrs.puff.png"
   },
   {
     "_id": "1023",
-    "name": "Abby",
+    "name": "Oldman",
     "friends": ["1013", "1022", "1024", "1025"],
-    "avatarUrl": "/images/profile-pics/000021.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/oldman.png"
   },
   {
     "_id": "1024",
-    "name": "Farhan",
+    "name": "Patrick",
     "friends": ["1023", "1022", "1025"],
-    "avatarUrl": "/images/profile-pics/000023.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/patrick.png"
   },
   {
     "_id": "1025",
-    "name": "Yasin",
+    "name": "Pearl",
     "friends": ["1023", "1024", "1022"],
-    "avatarUrl": "/images/profile-pics/000026.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/pearl.png"
   },
   {
     "_id": "1026",
-    "name": "Felix",
+    "name": "Pickyeater",
     "friends": ["1027", "1028", "1029"],
-    "avatarUrl": "/images/profile-pics/000027.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/pickyeater.png"
   },
   {
     "_id": "1027",
-    "name": "Amanda",
+    "name": "Plankton",
     "friends": ["1026", "1028", "1029"],
-    "avatarUrl": "/images/profile-pics/000028.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/plankton.png"
   },
   {
     "_id": "1028",
-    "name": "Mitchell",
+    "name": "Roachy",
     "friends": ["1027", "1026", "1029"],
-    "avatarUrl": "/images/profile-pics/000029.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/roachy.png"
   },
   {
     "_id": "1029",
-    "name": "Kendra",
+    "name": "Sandy",
     "friends": ["1027", "1028", "1026"],
-    "avatarUrl": "/images/profile-pics/000093.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/sandy.png"
   },
   {
     "_id": "1030",
-    "name": "Eric",
+    "name": "Spongebob",
     "friends": ["1031", "1032"],
-    "avatarUrl": "/images/profile-pics/000094.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/spongebob.png"
   },
   {
     "_id": "1031",
-    "name": "Dani",
+    "name": "Squidward",
     "friends": ["1030", "1032"],
-    "avatarUrl": "/images/profile-pics/000147.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/squidward.png"
   },
   {
     "_id": "1032",
-    "name": "Josie",
+    "name": "TheFlyingDutchman",
     "friends": ["1031", "1030"],
-    "avatarUrl": "/images/profile-pics/000153.jpg"
+    "avatarUrl": "/images/profile-pics/pictures/theflyingdutchman.png"
   }
 ]

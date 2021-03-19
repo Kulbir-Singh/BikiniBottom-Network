@@ -6,6 +6,7 @@ import Header from "./Header";
 import Users from "./Users";
 import User from "./User";
 import SignIn from "./SignIn";
+import SignUp from "./Signup";
 
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
           </Route>
           <Route path="/signin">
             <SignIn />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
           </Route>
         </Switch>
       </div>

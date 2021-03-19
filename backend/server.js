@@ -6,6 +6,7 @@ const {
   deleteUser,
   getUsers,
   getUserById,
+  addUser,
   handleFriends,
   updateUser,
 } = require("./handlers");
@@ -33,6 +34,7 @@ app.use(express.json());
 app.get("/api/users", passUsersAlong, getUsers);
 app.put("/api/users", passUsersAlong, updateUser);
 app.get("/api/users/:id", passUsersAlong, getUserById);
+app.post("/api/users", passUsersAlong, addUser);
 app.delete("/api/users/:id", passUsersAlong, deleteUser);
 app.patch("/api/friends", passUsersAlong, handleFriends);
 

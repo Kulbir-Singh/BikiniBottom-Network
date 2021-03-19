@@ -101,9 +101,16 @@ const handleFriends = (req, res) => {
   );
 };
 
+// add new user to the list of users
+const addUser = (res, req) => {
+  let newUser = req.body;
+  sendResponse(res, 200, activeUsers);
+};
+
 module.exports = {
   deleteUser,
   getUsers,
+  addUser,
   getUserById,
   handleFriends,
   updateUser,
