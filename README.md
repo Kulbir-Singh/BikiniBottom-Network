@@ -28,19 +28,18 @@ This is a website for bikini bottom residences. Sign In to see who’s connected
 
 ### Homepage
 
-<img src="./_screenshots/homepage.png" />
+<img src="./_screenshots/homepage.PNG" />
 
 ### The Profile Page
 
-<img src="./_screenshots/profile_3.png" />
 
 ### The Sign in page
 
-<img src="./_screenshots/signin.png" />
+<img src="./_screenshots/signin.PNG" />
 
 ### Friends!
 
-<img src="./_screenshots/friend.png/>
+<img src="./_screenshots/friend.PNG" />
 
 
 
