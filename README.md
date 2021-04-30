@@ -28,6 +28,7 @@ This is a website for bikini bottom residences. Sign In to see who’s connected
 
 ### Homepage
 
+<img src="./_screenshots/homepage.gif" />
 <img src="./_screenshots/homepage.PNG" />
 
 ### The Login Page
