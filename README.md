@@ -28,7 +28,7 @@ This is a website for bikini bottom residences. Sign In to see who’s connected
 
 ### Homepage
 
-<img src="./_screenshots/homepage_3.png" />
+<img src="./_screenshots/homepage.png" />
 
 ### The Profile Page
 
@@ -36,11 +36,11 @@ This is a website for bikini bottom residences. Sign In to see who’s connected
 
 ### The Sign in page
 
-<img src="./_screenshots/signin_2.png" />
+<img src="./_screenshots/signin.png" />
 
 ### Friends!
 
-<img src="./_screenshots/homepage_4.png" />
+<img src="./_screenshots/friend.png/>
 
 
 
