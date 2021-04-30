@@ -33,11 +33,8 @@ This is a website for bikini bottom residences. Sign In to see who’s connected
 
 ### The Login Page
 
-<img src="./_screenshots/login.gif" />
-
-### The Sign in page
-
 <img src="./_screenshots/signin.PNG" />
+<img src="./_screenshots/login.gif" />
 
 ### User!
 
