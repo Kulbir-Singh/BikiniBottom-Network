@@ -29,19 +29,7 @@ This is a website for bikini bottom residences. Sign In to see who’s connected
 ### Homepage
 
 <img src="./_screenshots/homepage.gif" aLign=center/>
-<img src="./_screenshots/homepage.PNG" />
 
-### The Login Page
-
-<img src="./_screenshots/login.gif" />
-
-### The Sign in page
-
-<img src="./_screenshots/signin.PNG" />
-
-### User!
-
-<img src="./_screenshots/friend.PNG" />
 
 
 
