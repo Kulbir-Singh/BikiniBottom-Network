@@ -79,7 +79,7 @@ const Name = styled.p`
   text-align: center;
 `;
 const Div = styled.div`
-  width: 100%;
+  max-width: 100%;
   display: flex;
   margin-top: 150px;
   height: 400px;
@@ -103,7 +103,7 @@ const FriendsList = styled.div`
   height: 100px;
   margin: 0px 50px;
   border-radius: 100px;
-  background: linear-gradient(90deg, #002b4d, #55e7fc);
+  background: #0e86d4;
   :hover {
     background: linear-gradient(90deg, #55e7fc, #002b4d);
   }

@@ -132,15 +132,15 @@
     "avatarUrl": "/images/profile-pics/pictures/spongebob.png"
   },
   {
-    "_id": "1031",
-    "name": "Squidward",
-    "friends": ["1030", "1032"],
-    "avatarUrl": "/images/profile-pics/pictures/squidward.png"
-  },
-  {
     "_id": "1032",
     "name": "TheFlyingDutchman",
     "friends": ["1031", "1030"],
     "avatarUrl": "/images/profile-pics/pictures/theflyingdutchman.png"
+  },
+  {
+    "_id": "1031",
+    "name": "Squidward",
+    "friends": ["1030", "1032"],
+    "avatarUrl": "/images/profile-pics/pictures/squidward.png"
   }
 ]

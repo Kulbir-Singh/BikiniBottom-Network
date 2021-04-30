@@ -35,7 +35,7 @@ const UserFocus = styled.div`
   width: 300px;
   border-radius: 300px;
   /* background-color: #002b4d; */
-  background: linear-gradient(90deg, #002b4d, #55e7fc);
+  background: #0e86d4;
   text-decoration: none;
   :hover {
     background: linear-gradient(90deg, #55e7fc, #002b4d);
@@ -44,7 +44,7 @@ const UserFocus = styled.div`
 
 const Div = styled.div`
   display: flex;
-  background: url("../spongebobwall.jpg");
+  background: url("../seablue.jpg");
   width: 100%;
   height: 94.7vh;
   padding-left: 10%;
@@ -54,10 +54,11 @@ const Div = styled.div`
 const H1 = styled.h1`
   position: relative;
   width: 500px;
-  border-bottom: 2px solid #002b4d;
+  border-bottom: 2px solid darkblue;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #000);
   text-decoration: none;
+  padding-bottom: 10px;
   color: white;
   font-size: 20px;
   top: -200px;

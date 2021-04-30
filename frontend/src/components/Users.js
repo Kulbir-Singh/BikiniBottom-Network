@@ -69,10 +69,12 @@ const YourFriend = styled.p`
 `;
 
 const Div = styled.div`
-  background-image: url("../water.jpg");
+  background-image: url("../gradient.jpg");
   background-size: cover;
+  max-width: 100vw;
   background-position: center;
   height: 94.7vh;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,15 +84,18 @@ const AllUsers = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 100vw;
 `;
 
 const UserInfo = styled.div`
   margin: 40px;
+  box-shadow: 0px -1px 40px -2px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 0px -1px 40px -2px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 0px -1px 40px -2px rgba(0, 0, 0, 0.67);
   height: 150px;
   width: 150px;
   border-radius: 100px;
-  /* background-color: #002b4d; */
-  background: linear-gradient(90deg, #002b4d, #55e7fc);
+  background: #0e86d4;
   text-decoration: none;
   :hover {
     background: linear-gradient(90deg, #55e7fc, #002b4d);
@@ -115,7 +120,8 @@ const UserName = styled.p`
   filter: drop-shadow(5px 5px 5px #000);
   text-decoration: none;
   color: white;
-  font-size: 30px;
+  width: 100px;
+  font-size: 25px;
   text-align: center;
   position: relative;
   top: -50px;
