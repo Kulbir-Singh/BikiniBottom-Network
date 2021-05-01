@@ -32,12 +32,10 @@ This is a website for bikini bottom residences. Sign In to see who’s connected
 ### Homepage
 
 <img src="./_screenshots/homepage.PNG" />
-<img src="./_screenshots/homepage.gif" aLign=center/>
 
 ### The Login Page
 
 <img src="./_screenshots/signin.PNG" />
-<img src="./_screenshots/login.gif" />
 
 ### User!
 
