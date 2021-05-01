@@ -3,8 +3,7 @@
 https://user-images.githubusercontent.com/25377766/116756253-cef39780-a9d9-11eb-9c2b-651c53b9d5c8.mp4
 
 ## Goal
-
-A website for bikini bottom residents!
+To Build a website to have a network of users connecting to each other. With the login feature you are able to see who is connected to who and add new connections.
 
 ### The Frontend
 
