@@ -37,7 +37,7 @@ This is a website for bikini bottom residences. Sign In to see who’s connected
 
 <img src="./_screenshots/signin.PNG" />
 
-### User!
+### User Profile
 
 <img src="./_screenshots/friend.PNG" />
 
