@@ -1,7 +1,6 @@
+#Mini-Project: BikiniBottom Social Network!
 
 https://user-images.githubusercontent.com/25377766/116756253-cef39780-a9d9-11eb-9c2b-651c53b9d5c8.mp4
-
-Mini-Project: BikiniBottom Social Network!
 
 ## Goal
 
